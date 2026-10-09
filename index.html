@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <title>Los Malditos — Recrutement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">LM</span><span>LOS <b>MALDITOS</b><small>RECRUTEMENT OFFICIEL</small></span></a>
+  <nav><a href="#conditions">Conditions</a><a href="#candidature">Candidature</a><a class="nav-cta" href="admin.html">Espace staff</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow"><span></span> LOS SANTOS · GTA ROLEPLAY</p>
+      <h1>TA PLACE<br><em>SE MÉRITE.</em></h1>
+      <p class="lead">La loyauté se prouve. Le respect se gagne. Présente ta candidature pour rejoindre Los Malditos.</p>
+      <a class="button" href="#candidature">DÉPOSER MA CANDIDATURE <span>↗</span></a>
+      <div class="hero-foot"><span>01 / RECRUTEMENT</span><span>DISCIPLINE · LOYAUTÉ · RESPECT</span></div>
+    </div>
+    <div class="hero-art" aria-label="Décor urbain abstrait">
+      <div class="red-orbit"></div><div class="city-line"></div><div class="seal">LM<small>LOS MALDITOS</small></div>
+      <div class="art-caption"><b>LOS MALDITOS</b><span>UNE FAMILLE. UN ENGAGEMENT.</span></div>
+    </div>
+  </section>
+  <section class="principles" id="conditions">
+    <div class="section-heading"><p class="eyebrow">AVANT DE POSTULER</p><h2>LES BASES SONT<br><em>NON NÉGOCIABLES.</em></h2></div>
+    <div class="principle-grid">
+      <article><span class="num">01</span><h3>IDENTITÉ RP</h3><p>Présente un personnage cohérent, avec une histoire et des objectifs clairs.</p></article>
+      <article><span class="num">02</span><h3>EXPÉRIENCE</h3><p>Connais les règles du serveur et respecte le cadre roleplay.</p></article>
+      <article><span class="num">03</span><h3>MOTIVATIONS</h3><p>Explique ce que tu peux apporter au groupe et comment tu joues en équipe.</p></article>
+    </div>
+  </section>
+  <section class="application-section" id="candidature">
+    <div class="section-heading"><p class="eyebrow">FORMULAIRE DE RECRUTEMENT</p><h2>FAIS TA <em>DEMANDE.</em></h2><p class="muted">Réponds avec sérieux. Les champs marqués * sont obligatoires.</p></div>
+    <form id="application-form" class="application-form">
+      <div class="form-row"><label>Nom et prénom RP *<input name="rp_name" required maxlength="100" placeholder="Ex. Marco Rossi"></label><label>Âge du personnage *<input name="rp_age" required type="number" min="18" max="99" placeholder="18"></label></div>
+      <div class="form-row"><label>Identifiant Discord *<input name="discord_tag" required maxlength="80" placeholder="pseudo ou ID Discord"></label><label>Identifiant en jeu (si applicable)<input name="game_id" maxlength="100" placeholder="ID serveur"></label></div>
+      <label>Histoire de ton personnage *<textarea name="backstory" required minlength="30" maxlength="2500" rows="5" placeholder="Origines, caractère, objectifs, événements marquants…"></textarea></label>
+      <label>Pourquoi veux-tu rejoindre Los Malditos ? *<textarea name="motivation" required minlength="30" maxlength="2000" rows="4" placeholder="Présente tes motivations…"></textarea></label>
+      <label>Expérience GTA RP *<textarea name="experience" required minlength="15" maxlength="1800" rows="3" placeholder="Serveurs fréquentés, durée d'expérience, ce que tu as appris…"></textarea></label>
+      <label>Que signifie le roleplay de qualité pour toi ? *<textarea name="roleplay_answer" required minlength="20" maxlength="1800" rows="3" placeholder="Explique ta vision du fair-play et de la cohérence RP…"></textarea></label>
+      <div class="form-row"><label>Disponibilités *<input name="availability" required maxlength="300" placeholder="Ex. soirs en semaine, week-end"></label><label>Micro fonctionnel ? *<select name="has_mic" required><option value="">Choisir…</option><option>Oui</option><option>Non</option></select></label></div>
+      <label>Comment réagirais-tu à un désaccord en scène RP ? *<textarea name="conflict" required minlength="20" maxlength="1500" rows="3" placeholder="Décris ta manière de préserver une bonne scène…"></textarea></label>
+      <label class="check"><input type="checkbox" name="rules_accepted" required> Je confirme avoir lu les règles du serveur et m'engage à les respecter. *</label>
+      <label class="check"><input type="checkbox" name="privacy_accepted" required> J'accepte que les informations saisies soient utilisées uniquement pour traiter ma candidature. *</label>
+      <button class="button submit" type="submit">ENVOYER MA CANDIDATURE <span>↗</span></button>
+      <p id="form-status" class="form-status" role="status">Configure Supabase dans <code>config.js</code> avant de recevoir des candidatures.</p>
+      <p class="fine-print">N'envoie pas de mot de passe ni d'informations personnelles réelles. Utilise uniquement tes informations de personnage et ton identifiant de contact Discord.</p>
+    </form>
+  </section>
+</main>
+<footer><span>© LOS MALDITOS · GTA RP</span><span>LOYALTY IS EARNED.</span></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
