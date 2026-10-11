@@ -3,4 +3,3 @@ window.LM_CONFIG = {
   SUPABASE_ANON_KEY: "sb_publishable_J9Ib14gjvdHm7cJJOOVLZQ_PvwEp8k",
   DISCORD_FUNCTION_URL: ""
 };
-```
